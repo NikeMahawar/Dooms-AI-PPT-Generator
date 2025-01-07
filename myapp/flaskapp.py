@@ -8,6 +8,7 @@ from myapp.jutils.jamba_generate_route import generate as jamba_generate
 load_dotenv()
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
 @app.route("/")
 @app.route("/home")
