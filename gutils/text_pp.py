@@ -12,8 +12,7 @@ dir_path = 'static/presentations'
 temp_dir = '/temp'
 load_dotenv()
 
-adobe_stock_api_key = "f0e04a5e33f241c09c00c4ce736bef91"
-
+adobe_stock_api_key = os.getenv("Adobe-stock")
 
 def search_adobe_stock_images(query):
     headers = {
